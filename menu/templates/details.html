@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ menu.item }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ menu.item }} </h1>
+  
+  <p>Price {{ menu.price }}</p>
+  <p>Temp: {{ menu.temp }}</p>
+  <p>Size: {{ menu.size }}</p>
+  
+  <p>Back to <a href="/menu">menu/a></p>
+  
+{% endblock %}
